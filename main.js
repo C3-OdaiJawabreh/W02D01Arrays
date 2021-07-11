@@ -85,7 +85,7 @@ const addToLast = function (array, value) {
      a.unshift(b)
      a.sort()
      return a
-  };*/
+  };
 
 //q#7
 const getLength = function (array) {
@@ -97,10 +97,114 @@ const getLength = function (array) {
         return length
     
 }
-    
-        
-  
 
+    */
+  
+//q#8
+const updateOrCreate = function (array, value, index) {
+    array[index]=value
+    return array
+  };
+
+
+  //q#9
+  const sliceArray = function (array, startVal, endVal) {
+      
+  };
+
+
+
+
+  //q#10
+  const randomFruit = function (array) {
+   let  a= (array["length"]-1)
+   let b = Math.ceil(Math.random()*a)
+       return array[b]    
+  };
+  const fruits = ["Apple", "Banana", "Strawberry", "Mango"];
+
+
+  //extra practice 
+  //q#1
+  const isPalindrome = function (string) {
+    let b = string.split('')
+    let a = b["length"]-1
+    if (a%2===0){
+        return true
+    }
+    else {
+        return false
+    }
+  };
+
+  //q#2
+  const arrayMiddle = function (array) {
+    let a = array["length"]
+    if (a%2===0){
+      a=(a/2)
+      let c = array [a]
+      let d = array [a-1]
+      return (d+c)/2
+    }else{a =(a/2)-0.5
+        return array[a]
+
+
+    }
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
