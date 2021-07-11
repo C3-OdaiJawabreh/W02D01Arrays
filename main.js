@@ -3,6 +3,7 @@ console.log(arrowTitle)
 console.log("W02D01")
 //pulse check
 //q#1
+/*
 const myFavoriteColor = ["red","Blue","green"]
 const negativeNumbers  = [-1,-2 ,-3 ,-4 ,-5]
 const food = ["mansaf","Brosted","Makmoura"]
@@ -39,7 +40,26 @@ array.join("");
 const array1 = ["John", "Doe", "The Third"];
 array1.join(" ")
 array3 = [1, 2, 3, 4];
-array3.reverse()
+array3.reverse()*/
+ //practice
+ //q#1
+ 
+ const addToArray = function (array, string) {
+         array.push(string)
+         return array
+ };
+
+ //q#2
+ const convertToString = function (array) {
+    let a= array.join(" ");
+    return a
+  };
+//q#3
+const accessElement = function (array, index) {
+    let a = array[index]
+    return a
+  };
+  
 
 
 
