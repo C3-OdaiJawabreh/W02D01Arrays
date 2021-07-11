@@ -43,7 +43,7 @@ array3 = [1, 2, 3, 4];
 array3.reverse()*/
  //practice
  //q#1
- 
+ /*
  const addToArray = function (array, string) {
          array.push(string)
          return array
@@ -59,6 +59,46 @@ const accessElement = function (array, index) {
     let a = array[index]
     return a
   };
+  //q#4
+  const isInArray = function (array, string) {
+     let a = array.indexOf(string)
+     if (a > -1){
+      return true
+     } else { return false}
+  };
+  //q#5
+  const reverseWords = function (string) {
+   let a = string.split(" ")
+   if (a[0]===string){
+       return string
+   }
+   else {
+     let x = a.reverse()
+     x = x.join(" ")
+     return x
+   }
+  };
+//q#6
+const addToLast = function (array, value) {
+    let a = array
+    let b = value
+     a.unshift(b)
+     a.sort()
+     return a
+  };*/
+
+//q#7
+const getLength = function (array) {
+
+    let length =0
+        while(array[length]!== undefined){
+            length = length + 1 
+        }
+        return length
+    
+}
+    
+        
   
 
 
