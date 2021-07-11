@@ -3,7 +3,7 @@ console.log(arrowTitle)
 console.log("W02D01")
 //pulse check
 //q#1
-/*
+
 const myFavoriteColor = ["red","Blue","green"]
 const negativeNumbers  = [-1,-2 ,-3 ,-4 ,-5]
 const food = ["mansaf","Brosted","Makmoura"]
@@ -27,6 +27,8 @@ const unorderedPlanets1 = ["Mars", "Earth", "Mercury"]
 unorderedPlanets1.push("mars")
 const animals1 = ["Cat", "Dog", "Dolphin", "Squirrel"];
 animals1[0]="Koala"
+
+
 //q#4
 const reptiles = ["Snake", "Lizard", "Turtle"];
 reptiles.push("Dinosaur ")
@@ -40,10 +42,12 @@ array.join("");
 const array1 = ["John", "Doe", "The Third"];
 array1.join(" ")
 array3 = [1, 2, 3, 4];
-array3.reverse()*/
+array3.reverse()
+
+
  //practice
  //q#1
- /*
+ 
  const addToArray = function (array, string) {
          array.push(string)
          return array
@@ -95,10 +99,18 @@ const getLength = function (array) {
             length = length + 1 
         }
         return length
-    
 }
 
-    */
+const getFirstVal = function (array) {
+    let anArr =[];
+    anArr.push(array[0])
+    console.log(array)
+    return anArr.join(" ")
+    
+  };
+  
+
+    
   
 //q#8
 const updateOrCreate = function (array, value, index) {
@@ -109,7 +121,9 @@ const updateOrCreate = function (array, value, index) {
 
   //q#9
   const sliceArray = function (array, startVal, endVal) {
-      
+      console.log(array[startVal])
+      array.splice(array[startVal],array[endVal])
+      return array
   };
 
 
@@ -147,10 +161,28 @@ const updateOrCreate = function (array, value, index) {
       return (d+c)/2
     }else{a =(a/2)-0.5
         return array[a]
-
-
     }
   };
+  //q#3
+  const removeElement = function (array, index) {
+    array.splice(index,1)
+    return array
+
+  };
+  //q#4
+  const combineArrays = function (arrayOne, arrayTwo) {
+let a = arrayOne
+let b = arrayTwo
+let c = a.concat(b) 
+return c
+  };
+
+  //q#5
+
+  
+  
+
+  
 
 
 
