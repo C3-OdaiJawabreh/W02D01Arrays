@@ -218,8 +218,32 @@ const arrayMiddle = function (array) {
   }
 
 };
+//Q#3
+const removeElement = function (array, index) {
+  array.splice(index,1)
+    return array
 
-  
+};
+
+//Q#4
+const combineArrays = function (arrayOne, arrayTwo) {
+  return arrayOne.concat(arrayTwo)
+};
+
+//Q#5
+const hasNestedArray = function (array) {
+  let arrayN= []
+  const b = array
+  for (let i =0 ; i<array.length ; i++){
+   arrayN=  array.flat()
+  }
+  if (b.join() === arrayN.join()){
+    console.log(b)
+    console.log(arrayN)
+    return false 
+  } else {return true}
+};
+
   
 
   
