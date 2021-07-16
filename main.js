@@ -3,7 +3,7 @@ console.log(arrowTitle)
 console.log("W02D01")
 //pulse check
 //q#1
-
+/*
 const myFavoriteColor = ["red","Blue","green"]
 const negativeNumbers  = [-1,-2 ,-3 ,-4 ,-5]
 const food = ["mansaf","Brosted","Makmoura"]
@@ -176,8 +176,48 @@ let b = arrayTwo
 let c = a.concat(b) 
 return c
   };
-
+*/
   //q#5
+
+  //solving the extra practice for chek
+  //Q#1
+  
+const isPalindrome = function (string) {
+  
+// i will try to delete every space in the string bu using replace function
+for(let i =0; i<string.length-1 ; i++){
+  if (string[i]= " "){
+   string = string.replace(' ','')
+   }  
+}
+let x = string.length-1
+// i want to creat a function to check if the fisrt valeue = the last and the if the first value +1 =the last value -1 
+for (let j=0 ; j<x/2 ; j++){
+  if(string[j]!==string[x-j]){
+    console.log(string[j])
+    console.log[string[x-j]]
+    return false
+  }
+}return true
+   
+};
+//Q#2
+const arrayMiddle = function (array) {
+  // i need o konw if the sum element of the arrray = odd or even
+  let x = array.length
+  if(x %2 !=0){
+    x = (x-1)/2
+ x = array[x]
+ return x
+  }
+  else {
+    console.log(x)
+    let y = array[x/2]
+    let z = array[x/2 - 1]
+    return (y+z)/2
+  }
+
+};
 
   
   
