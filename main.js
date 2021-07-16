@@ -233,15 +233,17 @@ const combineArrays = function (arrayOne, arrayTwo) {
 //Q#5
 const hasNestedArray = function (array) {
   let arrayN= []
-  const b = array
   for (let i =0 ; i<array.length ; i++){
    arrayN=  array.flat()
   }
-  if (b.join() === arrayN.join()){
-    console.log(b)
-    console.log(arrayN)
-    return false 
-  } else {return true}
+  console.log(arrayN)
+  console.log(array)
+ let x = arrayN.length
+ let y = array.length
+ if (x!==y){
+   return true
+ }
+return false
 };
 
   
